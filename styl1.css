@@ -1,0 +1,37 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption,tbody,tfoot,thead,th,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+
+{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1;background:#000000;color:#ffffff;font-family:prompt,arial}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}#bodywrap{width:900px;margin:0 auto}#headwrap{width:100%;text-align:center;padding-top:15px}.logo img{max-width:60%}#news{width:100%;font-family:prompt,arial;text-transform:uppercase}#jackpot{margin:10px 0 15px;font-size:34px;letter-spacing:4px;text-shadow:0 0 2px #999}.slide{margin-bottom:10px}h1,h2,h3{margin-bottom:20px;text-transform:uppercase;letter-spacing:1.5px;color:#e5c71b}h1{font-size:24px}h2{font-size:22px}h3{font-size:20px}p{line-height:1.8;margin-bottom:18px}a:link,a:visited,a:hover{color:#000;text-decoration:none}ol li{list-style:decimal;padding-left:10px;list-style-position:inside;margin-bottom:7px}img{max-width:100%}.date{font-size:12px;background:#111;padding:5px 0 5px 10px;border:1px solid #333;border-radius:5px;color:#ccc;margin-bottom:10px}.copyright{max-width:600px;margin:15px auto 30px;text-align:center;font-size:14px;color:#ffffff;width:100%}.kontener{display:inline-block;cursor:pointer;width:100%;margin:10px 0}.change .kontener{margin-bottom:20px}.bar1,.bar2,.bar3{width:25px;height:2px;background-color:#f5f5f5;margin:6px 0;transition:.4s;box-shadow:0 0 3px #fff}.change .bar1{opacity:1}.change .bar2{opacity:1}.change .bar3{opacity:1}.tombol{float:right;width:35px}
+
+.menu{
+	width: 100%;
+	background: #fdb51a;
+	margin-top: 10px;
+}
+.menu ul{
+	list-style: none;
+}
+.menu ul li{
+	display: inline-table;
+}
+.menu ul li a{
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+		#loginForm{margin:10px auto;width:250px}
+		#loginForm input{height:42px;width:100%}
+		#submitbttn, #btnRegister, #btnDesktop{width:100%;height:42px;line-height:42px;text-align:center;display:inline-block;vertical-align:middle;border:0;cursor:pointer;border:1px solid #000;}
+		#btnDesktop{color:#fff;text-decoration:underline;margin-top:20px}
+		#submitbttn {margin-top:10px;}
+		#btnRegister{background:#d4d4d4}
+		.themeBtn{background:#fdb51a;width:auto;text-align:center;font-weight:bold;color:black;min-width:50px;text-decoration: none;border:1px solid #000;}
+		.themeBtn-daftar{background:#d4d4d4;color:#000}
+		.themeBtn-daftar{background-color:transparent;color:#000}
+		.formInput{padding:0 5px}
+		input, select, textarea {box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+
+@media screen and (max-width:480px){#bodywrap{max-width:96%;margin:0 auto}#news{font-size:14px;height:20px}.login,.daftar{width:65%;margin:10px auto;height:37px;line-height:35px;font-size:16px;font-weight:700}p{text-align:justify}}@media screen and (max-width:320px){#bodywrap{max-width:96%;margin:0 auto}p{text-align:justify}}
