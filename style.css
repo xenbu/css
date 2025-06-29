@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,153 +6,119 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #08091d;
+    color: #fff;
 }
 
-/* Image Above Header */
-#header-image {
-    width: 100%;
-    background-color: #08091d; /* Set background to match */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #0d0f26;
     text-align: center;
     padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+/* Image Section */
+#header-image {
+    width: 100%;
+    background-color: #08091d;
+    text-align: center;
+    padding: 0;
+    line-height: 0; /* Fix untuk garis putih bawah gambar */
 }
 
 #header-image .header-img {
     width: 100%;
-    max-width: 1024px;  /* Ensure the image does not stretch beyond 1024px */
+    max-width: 1024px;
     height: auto;
     margin: 0 auto;
+    display: block; /* Fix untuk space di bawah gambar */
 }
 
-/* Header Styling */
-header {
-    background-color: #191970;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-/* Login & Register Section */
+/* Login/Register Buttons */
 #login-register {
     text-align: center;
-    margin-top: 20px;
     padding: 20px 0;
-    background-color: #08091d; /* Background color */
+    background-color: #0d0f26;
 }
 
-#login-register .container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-}
-
-/* Button Styling */
-#login-register .btn {
-    padding: 15px 40px; /* Adjust padding to make buttons larger */
-    text-decoration: none;
-    color: white;
-    border-radius: 30px; /* Rounded corners */
-    font-weight: bold;
+.btn {
     display: inline-block;
-    text-transform: uppercase; /* Make text uppercase */
-    font-size: 16px; /* Text size */
-    border: none; /* Remove borders to prevent unwanted lines */
-    transition: background-color 0.3s, transform 0.3s ease; /* Smooth transition */
-    width: 150px; /* Ensure the buttons have the same width */
-    text-align: center;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-/* Specific colors for login and register buttons */
-#login-register .btn-login {
-    background-color: #0000CD; /* Orange color for login */
-}
-
-#login-register .btn-register {
-    background-color: #0000CD; /* Green color for register */
-}
-
-/* Button hover effect */
-#login-register .btn:hover {
-    opacity: 0.8;
-    transform: translateY(-2px); /* Lift effect on hover */
+.btn:hover {
+    background-color: #e6b800;
 }
 
 /* Article Section */
 #article {
-    background-color: #08091d;  /* Set background to black */
-    color: white;  /* Set text color to white */
-    padding: 50px 0;
+    background-color: #101234;
+    padding: 40px 20px;
 }
 
 #article h2 {
-    color: white;
+    color: #ffcc00;
     margin-bottom: 20px;
+    font-size: 22px;
 }
 
 #article p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: white;  /* Ensure text color is white for paragraph */
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #f1f1f1;
 }
 
 /* Providers Section */
-#providers {
+.providers {
     background-color: #08091d;
-    padding: 50px 0;
-    color: white;
+    padding: 40px 20px;
+}
+
+.providers h2 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 30px;
 }
 
 .provider-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Create 7 columns */
-    gap: 20px;
-    padding: 0 20px;
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .provider-container img {
-    max-width: 100%;
+    width: 100px;
     height: auto;
-    object-fit: contain;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px;
 }
 
-/* Responsive Layout */
-@media (max-width: 1024px) {
-    .provider-container {
-        grid-template-columns: repeat(5, 1fr); /* 5 columns on medium screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .provider-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .provider-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on very small screens */
-    }
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
-    background-color: #191970;
-    color: white;
-    padding: 10px 0;
+    background-color: #0d0f26;
     text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #bbb;
 }
