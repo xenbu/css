@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Image Above Header */
+#header-image {
+    width: 100%;
+    background-color: #08091d;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 0; /* FIX: prevent white gap below image */
+}
+
+#header-image .header-img {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    display: block; /* FIX: remove inline spacing */
+}
+
+/* Header Styling */
+header {
+    background-color: #191970;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Login & Register Section */
+#login-register {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #08091d;
+}
+
+#login-register .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Button Styling */
+#login-register .btn {
+    padding: 15px 40px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s ease;
+    width: 150px;
+    text-align: center;
+}
+
+#login-register .btn-login {
+    background-color: #0000CD;
+}
+
+#login-register .btn-register {
+    background-color: #0000CD;
+}
+
+#login-register .btn:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* Article Section */
+#article {
+    background-color: #08091d;
+    color: white;
+    padding: 50px 0;
+}
+
+#article h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Providers Section */
+#providers {
+    background-color: #08091d;
+    padding: 50px 0;
+    color: white;
+}
+
+.provider-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.provider-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .provider-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .provider-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .provider-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #191970;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
