@@ -1,37 +1,158 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption,tbody,tfoot,thead,th,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
-
-{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-body{line-height:1;background:#000000;color:#ffffff;font-family:prompt,arial}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}#bodywrap{width:900px;margin:0 auto}#headwrap{width:100%;text-align:center;padding-top:15px}.logo img{max-width:60%}#news{width:100%;font-family:prompt,arial;text-transform:uppercase}#jackpot{margin:10px 0 15px;font-size:34px;letter-spacing:4px;text-shadow:0 0 2px #999}.slide{margin-bottom:10px}h1,h2,h3{margin-bottom:20px;text-transform:uppercase;letter-spacing:1.5px;color:#e51b23}h1{font-size:24px}h2{font-size:22px}h3{font-size:20px}p{line-height:1.8;margin-bottom:18px}a:link,a:visited,a:hover{color:#000;text-decoration:none}ol li{list-style:decimal;padding-left:10px;list-style-position:inside;margin-bottom:7px}img{max-width:100%}.date{font-size:12px;background:#111;padding:5px 0 5px 10px;border:1px solid #333;border-radius:5px;color:#ccc;margin-bottom:10px}.copyright{max-width:600px;margin:15px auto 30px;text-align:center;font-size:14px;color:#ffffff;width:100%}.kontener{display:inline-block;cursor:pointer;width:100%;margin:10px 0}.change .kontener{margin-bottom:20px}.bar1,.bar2,.bar3{width:25px;height:2px;background-color:#f5f5f5;margin:6px 0;transition:.4s;box-shadow:0 0 3px #fff}.change .bar1{opacity:1}.change .bar2{opacity:1}.change .bar3{opacity:1}.tombol{float:right;width:35px}
-
-.menu{
-	width: 100%;
-	background: #ff0000;
-	margin-top: 10px;
-}
-.menu ul{
-	list-style: none;
-}
-.menu ul li{
-	display: inline-table;
-}
-.menu ul li a{
-	display: inline-block;
-	padding: 0 10px;
-	line-height: 30px;
-	text-transform: uppercase;
-	font-weight: bold;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-		#loginForm{margin:10px auto;width:250px}
-		#loginForm input{height:42px;width:100%}
-		#submitbttn, #btnRegister, #btnDesktop{width:100%;height:42px;line-height:42px;text-align:center;display:inline-block;vertical-align:middle;border:0;cursor:pointer;border:1px solid #000;}
-		#btnDesktop{color:#fff;text-decoration:underline;margin-top:20px}
-		#submitbttn {margin-top:10px;}
-		#btnRegister{background:#d4d4d4}
-		.themeBtn{background:#e51b23;width:auto;text-align:center;font-weight:bold;color:black;min-width:50px;text-decoration: none;border:1px solid #000;}
-		.themeBtn-daftar{background:#d4d4d4;color:#000}
-		.themeBtn-daftar{background-color:transparent;color:#000}
-		.formInput{padding:0 5px}
-		input, select, textarea {box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-@media screen and (max-width:480px){#bodywrap{max-width:96%;margin:0 auto}#news{font-size:14px;height:20px}.login,.daftar{width:65%;margin:10px auto;height:37px;line-height:35px;font-size:16px;font-weight:700}p{text-align:justify}}@media screen and (max-width:320px){#bodywrap{max-width:96%;margin:0 auto}p{text-align:justify}}
+/* Image Above Header */
+#header-image {
+    width: 100%;
+    background-color: #08091d; /* Set background to match */
+    text-align: center;
+    padding: 20px 0;
+}
+
+#header-image .header-img {
+    width: 100%;
+    max-width: 1024px;  /* Ensure the image does not stretch beyond 1024px */
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #191970;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Login & Register Section */
+#login-register {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #08091d; /* Background color */
+}
+
+#login-register .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+/* Button Styling */
+#login-register .btn {
+    padding: 15px 40px; /* Adjust padding to make buttons larger */
+    text-decoration: none;
+    color: white;
+    border-radius: 30px; /* Rounded corners */
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase; /* Make text uppercase */
+    font-size: 16px; /* Text size */
+    border: none; /* Remove borders to prevent unwanted lines */
+    transition: background-color 0.3s, transform 0.3s ease; /* Smooth transition */
+    width: 150px; /* Ensure the buttons have the same width */
+    text-align: center;
+}
+
+/* Specific colors for login and register buttons */
+#login-register .btn-login {
+    background-color: #0000CD; /* Orange color for login */
+}
+
+#login-register .btn-register {
+    background-color: #0000CD; /* Green color for register */
+}
+
+/* Button hover effect */
+#login-register .btn:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Article Section */
+#article {
+    background-color: #08091d;  /* Set background to black */
+    color: white;  /* Set text color to white */
+    padding: 50px 0;
+}
+
+#article h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: white;  /* Ensure text color is white for paragraph */
+}
+
+/* Providers Section */
+#providers {
+    background-color: #08091d;
+    padding: 50px 0;
+    color: white;
+}
+
+.provider-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Create 7 columns */
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.provider-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .provider-container {
+        grid-template-columns: repeat(5, 1fr); /* 5 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .provider-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .provider-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on very small screens */
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #191970;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
